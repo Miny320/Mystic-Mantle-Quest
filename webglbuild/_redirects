@@ -1,8 +1,12 @@
-# Redirect all non-Unity asset requests to index.html
-# Unity assets are served directly
-/Build/* /Build/:splat 200
-/lib/* /lib/:splat 200
+# Unity WebGL Assets - serve directly
+/Build/webglbuild.loader.js /Build/webglbuild.loader.js 200
+/Build/webglbuild.framework.js /Build/webglbuild.framework.js 200
+/Build/webglbuild.wasm /Build/webglbuild.wasm 200
+/Build/webglbuild.data /Build/webglbuild.data 200
+/lib/thirdweb-unity-bridge.js /lib/thirdweb-unity-bridge.js 200
 /TemplateData/* /TemplateData/:splat 200
 /StreamingAssets/* /StreamingAssets/:splat 200
 /logo.png /logo.png 200
+
+# All other requests go to index.html
 /* /index.html 200

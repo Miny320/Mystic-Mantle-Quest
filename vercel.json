@@ -3,10 +3,15 @@
   "buildCommand": "echo 'No build command needed for static Unity WebGL build'",
   "outputDirectory": "webglbuild",
   "public": true,
+  "functions": {},
   "headers": [
     {
-      "source": "/Build/(.*)",
+      "source": "/Build/webglbuild.loader.js",
       "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        },
         {
           "key": "Cross-Origin-Embedder-Policy",
           "value": "require-corp"
@@ -18,63 +23,89 @@
       ]
     },
     {
-      "source": "/Build/(.*\\.js)",
+      "source": "/Build/webglbuild.framework.js",
       "headers": [
         {
           "key": "Content-Type",
           "value": "application/javascript"
+        },
+        {
+          "key": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
         }
       ]
     },
     {
-      "source": "/Build/(.*\\.wasm)",
+      "source": "/Build/webglbuild.wasm",
       "headers": [
         {
           "key": "Content-Type",
           "value": "application/wasm"
+        },
+        {
+          "key": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
         }
       ]
     },
     {
-      "source": "/Build/(.*\\.data)",
+      "source": "/Build/webglbuild.data",
       "headers": [
         {
           "key": "Content-Type",
           "value": "application/octet-stream"
+        },
+        {
+          "key": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
         }
       ]
     },
     {
-      "source": "/lib/(.*)",
+      "source": "/lib/thirdweb-unity-bridge.js",
       "headers": [
         {
           "key": "Content-Type",
           "value": "application/javascript"
-        }
-      ]
-    },
-    {
-      "source": "/TemplateData/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000"
-        }
-      ]
-    },
-    {
-      "source": "/StreamingAssets/(.*)",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/octet-stream"
         }
       ]
     }
   ],
   "rewrites": [
     {
-      "source": "/((?!Build|lib|TemplateData|StreamingAssets|logo\\.png).*)",
+      "source": "/Build/(.*)",
+      "destination": "/Build/$1"
+    },
+    {
+      "source": "/lib/(.*)",
+      "destination": "/lib/$1"
+    },
+    {
+      "source": "/TemplateData/(.*)",
+      "destination": "/TemplateData/$1"
+    },
+    {
+      "source": "/StreamingAssets/(.*)",
+      "destination": "/StreamingAssets/$1"
+    },
+    {
+      "source": "/logo.png",
+      "destination": "/logo.png"
+    },
+    {
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
