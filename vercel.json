@@ -3,7 +3,6 @@
   "buildCommand": "echo 'No build command needed for static Unity WebGL build'",
   "outputDirectory": "webglbuild",
   "public": true,
-  "functions": {},
   "headers": [
     {
       "source": "/Build/webglbuild.loader.js",
