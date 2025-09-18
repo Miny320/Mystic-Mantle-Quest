@@ -1,11 +1,11 @@
 {
   "version": 2,
   "buildCommand": "echo 'No build command needed for static Unity WebGL build'",
-  "outputDirectory": ".",
+  "outputDirectory": "webglbuild",
   "public": true,
   "headers": [
     {
-      "source": "/webglbuild/Build/webglbuild.loader.js",
+      "source": "/Build/webglbuild.loader.js",
       "headers": [
         {
           "key": "Content-Type",
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "source": "/webglbuild/Build/webglbuild.framework.js",
+      "source": "/Build/webglbuild.framework.js",
       "headers": [
         {
           "key": "Content-Type",
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "source": "/webglbuild/Build/webglbuild.wasm",
+      "source": "/Build/webglbuild.wasm",
       "headers": [
         {
           "key": "Content-Type",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "source": "/webglbuild/Build/webglbuild.data",
+      "source": "/Build/webglbuild.data",
       "headers": [
         {
           "key": "Content-Type",
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "source": "/webglbuild/lib/thirdweb-unity-bridge.js",
+      "source": "/lib/thirdweb-unity-bridge.js",
       "headers": [
         {
           "key": "Content-Type",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "source": "/webglbuild/TemplateData/(.*)",
+      "source": "/TemplateData/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "source": "/webglbuild/StreamingAssets/(.*)",
+      "source": "/StreamingAssets/(.*)",
       "headers": [
         {
           "key": "Content-Type",
@@ -102,28 +102,8 @@
   ],
   "rewrites": [
     {
-      "source": "/webglbuild/Build/(.*)",
-      "destination": "/webglbuild/Build/$1"
-    },
-    {
-      "source": "/webglbuild/lib/(.*)",
-      "destination": "/webglbuild/lib/$1"
-    },
-    {
-      "source": "/webglbuild/TemplateData/(.*)",
-      "destination": "/webglbuild/TemplateData/$1"
-    },
-    {
-      "source": "/webglbuild/StreamingAssets/(.*)",
-      "destination": "/webglbuild/StreamingAssets/$1"
-    },
-    {
-      "source": "/webglbuild/logo.png",
-      "destination": "/webglbuild/logo.png"
-    },
-    {
-      "source": "/",
-      "destination": "/webglbuild/index.html"
+      "source": "/((?!Build|lib|TemplateData|StreamingAssets|logo\\.png|test\\.html).*)",
+      "destination": "/index.html"
     }
   ]
 }
