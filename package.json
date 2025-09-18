@@ -1,0 +1,13 @@
+{
+  "name": "mystic-mantle-quest",
+  "version": "1.0.0",
+  "description": "Unity WebGL game deployed on Vercel",
+  "main": "webglbuild/index.html",
+  "scripts": {
+    "build": "echo 'Unity WebGL build already exists in webglbuild directory'",
+    "start": "echo 'Static Unity WebGL game - no server needed'"
+  },
+  "keywords": ["unity", "webgl", "game"],
+  "author": "",
+  "license": "MIT"
+}

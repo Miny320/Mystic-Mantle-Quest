@@ -1,0 +1,21 @@
+# Unity source files and project settings
+Assets/
+Packages/
+ProjectSettings/
+Library/
+Logs/
+Temp/
+UserSettings/
+creator kit rpg_BurstDebugInformation_DoNotShip/
+creator kit rpg_Data/
+creator kit rpg.exe
+UnityPlayer.dll
+MonoBleedingEdge/
+UnityCrashHandler64.exe
+
+# Build directory (using webglbuild instead)
+build/
+
+# Documentation and images
+README.md
+rpg-preview.png
