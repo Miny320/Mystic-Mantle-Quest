@@ -1,11 +1,11 @@
 {
   "version": 2,
   "buildCommand": "echo 'No build command needed for static Unity WebGL build'",
-  "outputDirectory": "webglbuild",
+  "outputDirectory": ".",
   "public": true,
   "headers": [
     {
-      "source": "/Build/webglbuild.loader.js",
+      "source": "/webglbuild/Build/(.*\\.js)",
       "headers": [
         {
           "key": "Content-Type",
@@ -22,24 +22,7 @@
       ]
     },
     {
-      "source": "/Build/webglbuild.framework.js",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/javascript"
-        },
-        {
-          "key": "Cross-Origin-Embedder-Policy",
-          "value": "require-corp"
-        },
-        {
-          "key": "Cross-Origin-Opener-Policy",
-          "value": "same-origin"
-        }
-      ]
-    },
-    {
-      "source": "/Build/webglbuild.wasm",
+      "source": "/webglbuild/Build/(.*\\.wasm)",
       "headers": [
         {
           "key": "Content-Type",
@@ -56,7 +39,7 @@
       ]
     },
     {
-      "source": "/Build/webglbuild.data",
+      "source": "/webglbuild/Build/(.*\\.data)",
       "headers": [
         {
           "key": "Content-Type",
@@ -73,39 +56,41 @@
       ]
     },
     {
-      "source": "/lib/thirdweb-unity-bridge.js",
+      "source": "/webglbuild/lib/(.*\\.js)",
       "headers": [
         {
           "key": "Content-Type",
           "value": "application/javascript"
         }
       ]
+    },
+    {
+      "source": "/webglbuild/TemplateData/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000"
+        }
+      ]
+    },
+    {
+      "source": "/webglbuild/StreamingAssets/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/octet-stream"
+        }
+      ]
     }
   ],
   "rewrites": [
     {
-      "source": "/Build/(.*)",
-      "destination": "/Build/$1"
+      "source": "/",
+      "destination": "/webglbuild/index.html"
     },
     {
-      "source": "/lib/(.*)",
-      "destination": "/lib/$1"
-    },
-    {
-      "source": "/TemplateData/(.*)",
-      "destination": "/TemplateData/$1"
-    },
-    {
-      "source": "/StreamingAssets/(.*)",
-      "destination": "/StreamingAssets/$1"
-    },
-    {
-      "source": "/logo.png",
-      "destination": "/logo.png"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "source": "/((?!webglbuild).*)",
+      "destination": "/webglbuild/index.html"
     }
   ]
 }

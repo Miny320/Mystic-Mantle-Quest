@@ -1,22 +1,18 @@
 # Unity WebGL Headers for Vercel
-/Build/*
+/Build/*.js
+  Content-Type: application/javascript
   Cross-Origin-Embedder-Policy: require-corp
   Cross-Origin-Opener-Policy: same-origin
 
-/Build/*.js
-  Content-Type: application/javascript
-
 /Build/*.wasm
   Content-Type: application/wasm
+  Cross-Origin-Embedder-Policy: require-corp
+  Cross-Origin-Opener-Policy: same-origin
 
 /Build/*.data
   Content-Type: application/octet-stream
+  Cross-Origin-Embedder-Policy: require-corp
+  Cross-Origin-Opener-Policy: same-origin
 
-/lib/*
+/lib/*.js
   Content-Type: application/javascript
-
-/TemplateData/*
-  Cache-Control: public, max-age=31536000
-
-/StreamingAssets/*
-  Content-Type: application/octet-stream
