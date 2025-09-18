@@ -5,7 +5,7 @@
   "public": true,
   "headers": [
     {
-      "source": "/webglbuild/Build/(.*\\.js)",
+      "source": "/webglbuild/Build/webglbuild.loader.js",
       "headers": [
         {
           "key": "Content-Type",
@@ -22,7 +22,24 @@
       ]
     },
     {
-      "source": "/webglbuild/Build/(.*\\.wasm)",
+      "source": "/webglbuild/Build/webglbuild.framework.js",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        },
+        {
+          "key": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
+        }
+      ]
+    },
+    {
+      "source": "/webglbuild/Build/webglbuild.wasm",
       "headers": [
         {
           "key": "Content-Type",
@@ -39,7 +56,7 @@
       ]
     },
     {
-      "source": "/webglbuild/Build/(.*\\.data)",
+      "source": "/webglbuild/Build/webglbuild.data",
       "headers": [
         {
           "key": "Content-Type",
@@ -56,7 +73,7 @@
       ]
     },
     {
-      "source": "/webglbuild/lib/(.*\\.js)",
+      "source": "/webglbuild/lib/thirdweb-unity-bridge.js",
       "headers": [
         {
           "key": "Content-Type",
@@ -85,11 +102,27 @@
   ],
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/webglbuild/index.html"
+      "source": "/webglbuild/Build/(.*)",
+      "destination": "/webglbuild/Build/$1"
     },
     {
-      "source": "/((?!webglbuild).*)",
+      "source": "/webglbuild/lib/(.*)",
+      "destination": "/webglbuild/lib/$1"
+    },
+    {
+      "source": "/webglbuild/TemplateData/(.*)",
+      "destination": "/webglbuild/TemplateData/$1"
+    },
+    {
+      "source": "/webglbuild/StreamingAssets/(.*)",
+      "destination": "/webglbuild/StreamingAssets/$1"
+    },
+    {
+      "source": "/webglbuild/logo.png",
+      "destination": "/webglbuild/logo.png"
+    },
+    {
+      "source": "/",
       "destination": "/webglbuild/index.html"
     }
   ]
