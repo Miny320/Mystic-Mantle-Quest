@@ -5,11 +5,11 @@
   "public": true,
   "headers": [
     {
-      "source": "/Build/(.*)",
+      "source": "/Build/(.*\\.js)",
       "headers": [
         {
           "key": "Content-Type",
-          "value": "application/octet-stream"
+          "value": "application/javascript"
         },
         {
           "key": "Cross-Origin-Embedder-Policy",
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "source": "/(.*\\.wasm)",
+      "source": "/Build/(.*\\.wasm)",
       "headers": [
         {
           "key": "Content-Type",
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "source": "/(.*\\.data)",
+      "source": "/Build/(.*\\.data)",
       "headers": [
         {
           "key": "Content-Type",
@@ -56,18 +56,27 @@
       ]
     },
     {
-      "source": "/(.*\\.js)",
+      "source": "/lib/(.*\\.js)",
       "headers": [
         {
           "key": "Content-Type",
           "value": "application/javascript"
         }
       ]
+    },
+    {
+      "source": "/TemplateData/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000"
+        }
+      ]
     }
   ],
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/((?!Build|lib|TemplateData|StreamingAssets).*)",
       "destination": "/index.html"
     }
   ]

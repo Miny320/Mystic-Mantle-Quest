@@ -19,3 +19,6 @@ build/
 # Documentation and images
 README.md
 rpg-preview.png
+
+# Vercel configuration files
+.vercel/
