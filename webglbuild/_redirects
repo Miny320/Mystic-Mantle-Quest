@@ -1,0 +1,8 @@
+# Redirect all non-Unity asset requests to index.html
+# Unity assets are served directly
+/Build/* /Build/:splat 200
+/lib/* /lib/:splat 200
+/TemplateData/* /TemplateData/:splat 200
+/StreamingAssets/* /StreamingAssets/:splat 200
+/logo.png /logo.png 200
+/* /index.html 200
