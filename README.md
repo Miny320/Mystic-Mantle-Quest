@@ -1,41 +1,222 @@
-<div style="display: flex; justify-content: center; align-items: center;">
-  <h1>Mystic Mantle Quest</h1>
-  <img src="https://github.com/legendarykamal/MysticMantleQuest/assets/95926324/3a912970-f5fa-437b-83fa-cf8281e62597" alt="logo">
+# 🎮 Mystic Mantle Quest
+
+<div align="center">
+  <img src="https://github.com/Miny320/Mystic-Mantle-Quest/assets/95926324/3a912970-f5fa-437b-83fa-cf8281e62597" alt="Mystic Mantle Quest Logo" width="200"/>
+  
+  **A Revolutionary Quest-Based Unity Game on Mantle Blockchain** 🌟
+  
+  [![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-blue?style=for-the-badge&logo=vercel)](https://minymystic-mantle-quest.vercel.app)
+  [![Unity](https://img.shields.io/badge/Unity-2022.3+-black?style=for-the-badge&logo=unity)](https://unity.com/)
+  [![Mantle](https://img.shields.io/badge/Mantle-Blockchain-blue?style=for-the-badge)](https://mantle.xyz/)
+  [![Thirdweb](https://img.shields.io/badge/Thirdweb-Web3-orange?style=for-the-badge&logo=ethereum)](https://thirdweb.com/)
 </div>
 
+---
 
-## 🎮 A Quest Based Unity Game on Mantle Blockchain 🌟
+## 🌟 Overview
 
-Welcome to the exciting world of our quest-based 2D game powered by the revolutionary Mantle Blockchain! Prepare yourself for an immersive and rewarding gaming experience that combines the thrill of completing quests with the power of blockchain technology.
+**Mystic Mantle Quest** is an innovative 2D RPG game that seamlessly integrates blockchain technology with traditional gaming mechanics. Built on Unity and powered by the Mantle blockchain, this game offers players a unique opportunity to earn real cryptocurrency rewards while embarking on epic quests and collecting valuable NFT weapons.
 
-### Game Flow
+### 🎯 Game Flow
 
-![mmqflow](https://github.com/legendarykamal/MysticMantleQuest/assets/95926324/1ec31c73-c86a-40fb-abeb-7212c579127e)
+<div align="center">
+  <img src="https://github.com/Miny320/Mystic-Mantle-Quest/assets/95926324/1ec31c73-c86a-40fb-abeb-7212c579127e" alt="Game Flow Diagram" width="600"/>
+</div>
 
-### Presentation Link - https://docs.google.com/presentation/d/1VsS5hMEE52MiOXsyNMQdlMrJm35sPjGIy4qMG5wmV9g/edit?usp=sharing
+---
 
-### 🗡️ Complete Quests and Earn ERC-20 Coins 💰
+## 🚀 Live Demo & Presentation
 
-Embark on thrilling quests filled with challenges, puzzles, and adventures. Each successfully completed quest will reward you with valuable ERC-20 coins. These coins serve as your ticket to unlocking the next level of excitement in our game.
+- **🌐 Live Game**: [minymystic-mantle-quest.vercel.app](https://minymystic-mantle-quest.vercel.app)
+- **📊 Project Presentation**: [View Presentation](https://docs.google.com/presentation/d/1VsS5hMEE52MiOXsyNMQdlMrJm35sPjGIy4qMG5wmV9g/edit?usp=sharing)
 
-🔗 MMQ COIN Contract: https://explorer.testnet.mantle.xyz/address/0x0B844d398F3a19f41209006D1D735FF379d99BDD
+---
 
-Visit the above link to explore the MMQ COIN contract on the Mantle Blockchain. It ensures a secure and transparent environment for your in-game transactions. Earn, trade, and utilize your hard-earned MMQ coins to enhance your gaming experience.
+## 💰 Blockchain Integration
 
-###  ⚔️ Collect Beautiful Weapon NFTs from MMQ Marketplace 💎
+### 🪙 MMQ COIN (ERC-20 Token)
 
-Show off your achievements and upgrade your arsenal by collecting stunning Weapon NFTs from the MMQ Marketplace. These unique and valuable Non-Fungible Tokens represent powerful weapons that can aid you in your quests and make you a formidable player.
+Earn valuable ERC-20 tokens by completing quests and achieving milestones in the game.
 
-🔗 Weapon NFTs: https://explorer.testnet.mantle.xyz/address/0x73c4b4E214270C340546517A13A20CB10F7f1438
+**Contract Address**: [`0x0B844d398F3a19f41209006D1D735FF379d99BDD`](https://explorer.testnet.mantle.xyz/address/0x0B844d398F3a19f41209006D1D735FF379d99BDD)
 
-Explore the above link to discover a treasure trove of Weapon NFTs available on the Mantle Blockchain. Each NFT is a testament to your prowess in the game and serves as a valuable asset in your gaming journey.
+- Complete quests to earn MMQ coins
+- Trade and utilize tokens within the game ecosystem
+- Transparent and secure transactions on Mantle blockchain
 
-### 💼 MMQ Marketplace: https://explorer.testnet.mantle.xyz/address/0x424832c400e69230E3553Aed59e0eF9A605Ea195
+### ⚔️ Weapon NFTs (ERC-721)
 
-Visit the MMQ Marketplace to unleash the full potential of your MMQ coins. Here, you can buy, sell, and trade Weapon NFTs with other players, creating a vibrant and dynamic in-game economy. Find the perfect weapon to suit your playstyle and make your mark in the gaming community.
+Collect unique and powerful weapon NFTs that enhance your gameplay experience.
 
-### 🌐 Join the Adventure on Mantle Blockchain 🚀
+**Contract Address**: [`0x73c4b4E214270C340546517A13A20CB10F7f1438`](https://explorer.testnet.mantle.xyz/address/0x73c4b4E214270C340546517A13A20CB10F7f1438)
 
-Experience the fusion of gaming and blockchain like never before. Join us on the Mantle Blockchain, where your quests become more rewarding, your weapons become legendary, and your gaming journey becomes truly extraordinary.
+- Discover rare weapon NFTs
+- Each NFT is a unique digital asset
+- Trade and showcase your collection
 
-Are you ready to conquer the challenges and unlock a world of possibilities? Step into the realm of our quest-based 2D game on the Mantle Blockchain today! 🎮✨
+### 🏪 MMQ Marketplace
+
+A vibrant marketplace where players can buy, sell, and trade Weapon NFTs using MMQ coins.
+
+**Contract Address**: [`0x424832c400e69230E3553Aed59e0eF9A605Ea195`](https://explorer.testnet.mantle.xyz/address/0x424832c400e69230E3553Aed59e0eF9A605Ea195)
+
+- Buy and sell Weapon NFTs
+- Dynamic in-game economy
+- Connect with other players
+
+---
+
+## 🛠️ Technical Stack
+
+### Core Technologies
+- **🎮 Game Engine**: Unity 2022.3+ with Universal Render Pipeline (URP)
+- **🌐 Web3 Integration**: Thirdweb SDK for Unity
+- **⛓️ Blockchain**: Mantle Network (Layer 2)
+- **🚀 Deployment**: Vercel for WebGL builds
+
+### Key Features
+- **Quest System**: Dynamic quest management with rewards
+- **Inventory System**: Collectible items and weapons
+- **NFT Integration**: ERC-721 and ERC-1155 support
+- **Token Economics**: ERC-20 token rewards
+- **Marketplace**: In-game trading system
+- **Web3 Wallet**: MetaMask, Coinbase Wallet, WalletConnect support
+
+### Project Structure
+```
+MysticMantleQuest/
+├── Assets/
+│   ├── Creator Kit - RPG/     # Core RPG game assets
+│   │   ├── Scripts/          # Game logic and mechanics
+│   │   ├── Art/              # Sprites, animations, tiles
+│   │   ├── Audio/            # Sound effects and music
+│   │   └── Prefabs/          # Game objects and UI
+│   ├── Thirdweb/             # Web3 blockchain integration
+│   │   ├── Scripts/          # Thirdweb SDK implementation
+│   │   └── Demo/             # Demo scripts and examples
+│   └── WebGLTemplates/       # Custom WebGL deployment templates
+├── webglbuild/               # Unity WebGL build output
+├── vercel.json              # Vercel deployment configuration
+└── package.json             # Project metadata
+```
+
+---
+
+## 🎮 Game Features
+
+### Core Gameplay
+- **🗺️ 2D RPG Adventure**: Explore immersive game worlds
+- **⚔️ Quest System**: Complete challenging quests for rewards
+- **🎒 Inventory Management**: Collect and manage items
+- **💬 NPC Interactions**: Rich dialogue and conversation systems
+- **🎵 Audio System**: Dynamic music and sound effects
+
+### Blockchain Features
+- **🔗 Wallet Integration**: Connect with popular Web3 wallets
+- **💰 Token Rewards**: Earn MMQ coins for quest completion
+- **🛡️ NFT Weapons**: Collect and trade unique weapon NFTs
+- **🏪 Marketplace**: Buy/sell items with other players
+- **📊 Transparent Economy**: All transactions recorded on blockchain
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Unity 2022.3 or later
+- Web3 wallet (MetaMask, Coinbase Wallet, etc.)
+- Mantle testnet tokens for gas fees
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Miny320/Mystic-Mantle-Quest.git
+   ```
+
+2. Open the project in Unity
+3. Install required packages through Package Manager
+4. Configure Thirdweb settings for Mantle network
+5. Build for WebGL platform
+
+### Deployment
+The game is configured for automatic deployment to Vercel:
+- Push changes to the `master` branch
+- Vercel will automatically build and deploy the WebGL version
+- Access the live game at the provided URL
+
+---
+
+## 🔧 Development
+
+### Key Scripts
+- **`Quest.cs`**: Quest management and reward system
+- **`InventoryItem.cs`**: Item collection mechanics
+- **`ThirdwebSDKDemos.cs`**: Web3 integration examples
+- **`GameController.cs`**: Main game state management
+
+### Web3 Integration
+The game uses Thirdweb SDK for seamless blockchain integration:
+- Wallet connection and authentication
+- Smart contract interactions
+- NFT minting and trading
+- Token transfers and balances
+
+---
+
+## 🌐 Network Information
+
+- **Network**: Mantle Testnet
+- **Chain ID**: 5001
+- **RPC URL**: https://rpc.testnet.mantle.xyz
+- **Block Explorer**: https://explorer.testnet.mantle.xyz
+
+---
+
+## 📈 Roadmap
+
+- [ ] **Phase 1**: Core game mechanics and quest system ✅
+- [ ] **Phase 2**: Blockchain integration and token rewards ✅
+- [ ] **Phase 3**: NFT marketplace and trading system ✅
+- [ ] **Phase 4**: Enhanced graphics and animations
+- [ ] **Phase 5**: Multiplayer features and guild system
+- [ ] **Phase 6**: Mobile app development
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from the community! Please feel free to:
+- Report bugs and issues
+- Suggest new features
+- Submit pull requests
+- Improve documentation
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- **Unity Creator Kit - RPG**: Base game framework
+- **Thirdweb**: Web3 SDK and infrastructure
+- **Mantle Network**: Layer 2 blockchain platform
+- **Vercel**: Deployment and hosting platform
+
+---
+
+## 📞 Contact & Support
+
+- **GitHub Repository**: [Mystic-Mantle-Quest](https://github.com/Miny320/Mystic-Mantle-Quest)
+- **Live Demo**: [minymystic-mantle-quest.vercel.app](https://minymystic-mantle-quest.vercel.app)
+- **Presentation**: [Project Overview](https://docs.google.com/presentation/d/1VsS5hMEE52MiOXsyNMQdlMrJm35sPjGIy4qMG5wmV9g/edit?usp=sharing)
+
+---
+
+<div align="center">
+  <p><strong>Ready to embark on your blockchain gaming adventure?</strong></p>
+  <p>🎮 <a href="https://minymystic-mantle-quest.vercel.app">Play Now</a> | ⚔️ <a href="https://explorer.testnet.mantle.xyz/address/0x73c4b4E214270C340546517A13A20CB10F7f1438">View NFTs</a> | 💰 <a href="https://explorer.testnet.mantle.xyz/address/0x0B844d398F3a19f41209006D1D735FF379d99BDD">Check Tokens</a></p>
+</div>
