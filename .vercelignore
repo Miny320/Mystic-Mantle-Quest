@@ -13,8 +13,9 @@ UnityPlayer.dll
 MonoBleedingEdge/
 UnityCrashHandler64.exe
 
-# Build directory (using webglbuild instead)
+# Build directories
 build/
+webglbuild/
 
 # Documentation and images
 README.md

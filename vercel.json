@@ -1,7 +1,7 @@
 {
   "version": 2,
   "buildCommand": "echo 'No build command needed for static Unity WebGL build'",
-  "outputDirectory": "webglbuild",
+  "outputDirectory": ".",
   "public": true,
   "headers": [
     {
