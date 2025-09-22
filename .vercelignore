@@ -17,6 +17,17 @@ UnityCrashHandler64.exe
 build/
 webglbuild/
 public/
+Build/
+lib/
+TemplateData/
+StreamingAssets/
+
+# Root level files (we only deploy from vercel-deploy/)
+index.html
+logo.png
+test.html
+_headers
+test-deploy.txt
 
 # Documentation and images
 README.md

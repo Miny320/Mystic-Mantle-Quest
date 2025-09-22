@@ -1,11 +1,6 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "**/*",
-      "use": "@vercel/static"
-    }
-  ],
+  "outputDirectory": "vercel-deploy",
   "headers": [
     {
       "source": "/Build/(.*\\.js)",
@@ -22,6 +17,15 @@
         {
           "key": "Content-Type",
           "value": "application/wasm"
+        }
+      ]
+    },
+    {
+      "source": "/Build/(.*\\.data)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/octet-stream"
         }
       ]
     }
