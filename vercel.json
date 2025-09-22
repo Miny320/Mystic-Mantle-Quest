@@ -1,7 +1,6 @@
 {
   "version": 2,
-  "outputDirectory": "public",
-  "cleanUrls": true,
+  "public": true,
   "headers": [
     {
       "source": "/Build/webglbuild.loader.js",
