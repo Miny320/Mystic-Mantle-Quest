@@ -1,9 +1,27 @@
 {
   "version": 2,
+  "outputDirectory": "webglbuild",
   "public": true,
   "headers": [
     {
-      "source": "/(.*\\.js)",
+      "source": "/Build/(.*\\.js)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        },
+        {
+          "key": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
+        }
+      ]
+    },
+    {
+      "source": "/lib/(.*\\.js)",
       "headers": [
         {
           "key": "Content-Type",
@@ -12,7 +30,7 @@
       ]
     },
     {
-      "source": "/(.*\\.wasm)",
+      "source": "/Build/(.*\\.wasm)",
       "headers": [
         {
           "key": "Content-Type",
@@ -29,7 +47,7 @@
       ]
     },
     {
-      "source": "/(.*\\.data)",
+      "source": "/Build/(.*\\.data)",
       "headers": [
         {
           "key": "Content-Type",
@@ -44,36 +62,19 @@
           "value": "same-origin"
         }
       ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/webglbuild/index.html"
     },
     {
-      "source": "/Build/(.*)",
-      "destination": "/webglbuild/Build/$1"
-    },
-    {
-      "source": "/lib/(.*)",
-      "destination": "/webglbuild/lib/$1"
-    },
-    {
-      "source": "/TemplateData/(.*)",
-      "destination": "/webglbuild/TemplateData/$1"
-    },
-    {
-      "source": "/StreamingAssets/(.*)",
-      "destination": "/webglbuild/StreamingAssets/$1"
-    },
-    {
-      "source": "/logo.png",
-      "destination": "/webglbuild/logo.png"
-    },
-    {
-      "source": "/test.html",
-      "destination": "/webglbuild/test.html"
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
+        }
+      ]
     }
   ]
 }
