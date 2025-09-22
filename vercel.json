@@ -1,7 +1,5 @@
 {
   "version": 2,
-  "buildCommand": "echo 'No build command needed for static Unity WebGL build'",
-  "outputDirectory": "webglbuild",
   "public": true,
   "headers": [
     {
@@ -50,8 +48,32 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!Build|lib|TemplateData|StreamingAssets|logo\\.png|test\\.html).*)",
-      "destination": "/index.html"
+      "source": "/",
+      "destination": "/webglbuild/index.html"
+    },
+    {
+      "source": "/Build/(.*)",
+      "destination": "/webglbuild/Build/$1"
+    },
+    {
+      "source": "/lib/(.*)",
+      "destination": "/webglbuild/lib/$1"
+    },
+    {
+      "source": "/TemplateData/(.*)",
+      "destination": "/webglbuild/TemplateData/$1"
+    },
+    {
+      "source": "/StreamingAssets/(.*)",
+      "destination": "/webglbuild/StreamingAssets/$1"
+    },
+    {
+      "source": "/logo.png",
+      "destination": "/webglbuild/logo.png"
+    },
+    {
+      "source": "/test.html",
+      "destination": "/webglbuild/test.html"
     }
   ]
 }

@@ -15,7 +15,6 @@ UnityCrashHandler64.exe
 
 # Build directories
 build/
-webglbuild/
 
 # Documentation and images
 README.md
