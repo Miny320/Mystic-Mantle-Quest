@@ -13,7 +13,7 @@ UnityPlayer.dll
 MonoBleedingEdge/
 UnityCrashHandler64.exe
 
-# Build directories
+# Build directories that we don't want to deploy
 build/
 webglbuild/
 public/
