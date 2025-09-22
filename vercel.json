@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "outputDirectory": "webglbuild",
-  "public": true,
+  "outputDirectory": "public",
+  "cleanUrls": true,
   "headers": [
     {
-      "source": "/Build/(.*\\.js)",
+      "source": "/Build/webglbuild.loader.js",
       "headers": [
         {
           "key": "Content-Type",
@@ -21,16 +21,24 @@
       ]
     },
     {
-      "source": "/lib/(.*\\.js)",
+      "source": "/Build/webglbuild.framework.js",
       "headers": [
         {
           "key": "Content-Type",
           "value": "application/javascript"
+        },
+        {
+          "key": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
         }
       ]
     },
     {
-      "source": "/Build/(.*\\.wasm)",
+      "source": "/Build/webglbuild.wasm",
       "headers": [
         {
           "key": "Content-Type",
@@ -47,7 +55,7 @@
       ]
     },
     {
-      "source": "/Build/(.*\\.data)",
+      "source": "/Build/webglbuild.data",
       "headers": [
         {
           "key": "Content-Type",
@@ -60,6 +68,15 @@
         {
           "key": "Cross-Origin-Opener-Policy",
           "value": "same-origin"
+        }
+      ]
+    },
+    {
+      "source": "/lib/thirdweb-unity-bridge.js",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
         }
       ]
     },
